@@ -12,6 +12,9 @@ Library ez_http
   Path         : ./src/ez_http
   BuildTools   : ocamlbuild
   Modules      : Ez_http
+               , Ez_http_client
+               , Ez_http_request
+               , Ez_http_response
   builddepends : threads
                , core
                , async
