@@ -38,7 +38,7 @@ let main port =
       let
         { Ez_http_response
         . status
-        ; headers
+        ; headers = _
         ; body
         } = resp
       in
