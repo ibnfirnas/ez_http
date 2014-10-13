@@ -42,6 +42,7 @@ let main port =
         ; body
         } = resp
       in
+      assert (status = 200);
       assert (body = Server.resp_body);
       eprintf "Everything is awesome!\n%!";
       return ()
