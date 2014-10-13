@@ -1,0 +1,19 @@
+# vim: filetype=yaml:tabstop=2:softtabstop=2:shiftwidth=2:
+
+OASISFormat : 0.4
+Name        : ez_http
+Version     : 0.0.0
+Synopsis    : Convenience wrapper around Cohttp_async.Client.
+Authors     : Siraaj Khandkar <siraaj@khandkar.net>
+License     : MIT
+Plugins     : META (0.4), DevFiles (0.4)
+
+Library ez_http
+  Path         : ./src/ez_http
+  BuildTools   : ocamlbuild
+  Modules      : Ez_http
+  builddepends : threads
+               , core
+               , async
+               , uri
+               , cohttp.async
