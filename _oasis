@@ -20,3 +20,16 @@ Library ez_http
                , async
                , uri
                , cohttp.async
+
+Executable example_usage
+  Path           : examples
+  MainIs         : example_usage.ml
+  CompiledObject : best
+  Install        : false
+  BuildTools     : ocamlbuild
+  builddepends   : threads
+                 , core
+                 , async
+                 , uri
+                 , cohttp.async
+                 , ez_http

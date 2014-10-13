@@ -1,3 +1,5 @@
+*.native
+*.byte
 _build/
 _tags
 configure
